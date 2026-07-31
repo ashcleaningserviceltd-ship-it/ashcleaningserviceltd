@@ -1,0 +1,2 @@
+export type FAQ = { question:string; answer:string };
+export function FAQAccordion({items}:{items:FAQ[]}){return <div className="mt-10 grid gap-3">{items.map((item)=><details key={item.question} className="card group p-5"><summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold"><span>{item.question}</span><span className="text-[#5ee6c5] transition-transform group-open:rotate-45" aria-hidden="true">＋</span></summary><p className="muted mt-4 max-w-3xl pr-8">{item.answer}</p></details>)}</div>}
