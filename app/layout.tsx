@@ -19,7 +19,7 @@ const manrope = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: { default: "Professional Cleaning Services in Calgary | ASH Cleaning Service", template: "%s | ASH Cleaning Service" },
-  description: "Professional home, deep, move-in, move-out, car and garden cleaning services for busy Calgary families. Request a free quote from ASH Cleaning Service.",
+  description: "Professional home, deep, move-in, move-out, carpet and garden cleaning services for busy Calgary families. Request a free quote from ASH Cleaning Service.",
   icons: { icon: "/icon.svg" },
 };
 export const viewport: Viewport = { themeColor: "#08100f", colorScheme: "dark" };

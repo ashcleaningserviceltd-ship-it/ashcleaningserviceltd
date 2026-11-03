@@ -15,7 +15,7 @@ export default function ContactPage() {
       <div className="container">
         <p className="eyebrow">No pressure. No obligation.</p>
         <h1 className="display mt-4 max-w-4xl">Tell Us What Would Make Life Easier</h1>
-        <p className="muted mt-6 max-w-2xl text-lg">Request a clear cleaning quote for your home, vehicle, garden or a combination of services.</p>
+        <p className="muted mt-6 max-w-2xl text-lg">Request a clear cleaning quote for your home, carpets, garden or a combination of services.</p>
       </div>
     </section>
     <section className="section">

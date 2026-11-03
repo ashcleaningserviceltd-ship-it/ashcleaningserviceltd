@@ -19,6 +19,18 @@ button,input,select,textarea { font:inherit; }
 .hero-reveal-4 { animation-delay:.56s; }
 .hero-reveal-5 { animation-delay:.72s; }
 @keyframes hero-reveal { to { opacity:1; translate:0 0; filter:blur(0); } }
+.section-reveal { transform-origin:center; }
+@media (prefers-reduced-motion:no-preference){
+  @supports (animation-timeline:view()){
+    .section-reveal { animation-duration:1ms; animation-fill-mode:both; animation-timeline:view(); animation-range:entry 8% cover 34%; }
+    .section-reveal-left { animation-name:section-reveal-left; }
+    .section-reveal-right { animation-name:section-reveal-right; }
+    .section-reveal-zoom { animation-name:section-reveal-zoom; }
+  }
+}
+@keyframes section-reveal-left { from { opacity:0; translate:-3rem 0; filter:blur(8px); } to { opacity:1; translate:0 0; filter:blur(0); } }
+@keyframes section-reveal-right { from { opacity:0; translate:3rem 0; filter:blur(8px); } to { opacity:1; translate:0 0; filter:blur(0); } }
+@keyframes section-reveal-zoom { from { opacity:0; scale:.92; filter:blur(8px); } to { opacity:1; scale:1; filter:blur(0); } }
 .display { font-size:clamp(2.35rem,6vw,5.2rem); line-height:.98; letter-spacing:-.055em; font-weight:800; text-wrap:balance; }
 .hero-display { font-size:clamp(2.2rem,4.25vw,3.85rem); line-height:1.04; letter-spacing:-.045em; font-weight:800; text-wrap:balance; }
 .h2 { font-size:clamp(2rem,4.3vw,3.75rem); line-height:1.05; letter-spacing:-.045em; font-weight:800; text-wrap:balance; }

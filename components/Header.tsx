@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { QuoteButton, WhatsAppButton } from "./Buttons";
 
-const links = [["/","Home"],["/services","Services"],["/about","About"],["/before-after","Before & After"],["/contact","Contact"]] as const;
+const links = [["/","Home"],["/services","Services"],["/about","About"],["/contact","Contact"]] as const;
 
 export function Header() {
   const [open,setOpen]=useState(false); const path=usePathname();
