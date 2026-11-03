@@ -2,7 +2,7 @@
 export const siteConfig = {
   name: "ASH Cleaning Service",
   shortName: "ASH Cleaning",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.your-domain.ca",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.ashcleaningserviceltd.com",
   location: "Calgary, Alberta, Canada",
   address: "10220 8 St SW, Calgary, AB T2W 0H1, Canada",
   phone: "+1 (825) 760-0851",
