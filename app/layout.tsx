@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -25,5 +26,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#08100f", colorScheme: "dark" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en-CA" className={manrope.variable}><body style={{fontFamily:"var(--font-manrope),sans-serif"}}><a href="#main" className="skip-link">Skip to content</a><Header/><main id="main">{children}</main><Footer/><StickyMobileCTA/></body></html>;
+  return <html lang="en-CA" className={manrope.variable}><body style={{fontFamily:"var(--font-manrope),sans-serif"}}><a href="#main" className="skip-link">Skip to content</a><Header/><main id="main">{children}</main><Footer/><StickyMobileCTA/><Script src="https://www.googletagmanager.com/gtag/js?id=G-C0HR2283F2" strategy="afterInteractive"/><Script id="google-analytics" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-C0HR2283F2');`}</Script></body></html>;
 }
